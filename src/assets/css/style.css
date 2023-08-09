@@ -1,24 +1,20 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 /* Variables */
 :root {
   --header-height: 3rem;
 
-  /* Colores */
-  --hue: 0;
-  --sat: 0%;
+  /* Colors */
   --title-color: #fff;
-  --title-color-dark: #fff;
-  --title-color-dark-2: #ffffff4d;
-  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --title-color-dark: #ffffff4d;
   --body-color: #121212;
   --container-color: #181818;
 
-  /* Fuentes */
-  --body-font: "Poppins", sans-serif;
+  /* Font */
+  --body-font: "Inter", sans-serif;
 
-  /* Tamaño de Fuentes */
+  /* Font Size */
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -32,7 +28,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /* Margenes */
+  /* Margin */
   /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
@@ -43,26 +39,13 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
-/* Responsive typography */
-@media screen and (max-width: 992px) {
-  :root {
-    --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-  }
-}
-
-/*=============== BASE ===============*/
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +66,7 @@ textarea {
 
 body {
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: var(--title-color-dark);
 }
 
 h1,
@@ -112,7 +95,7 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* Reusable CSS */
 .section {
   padding: 6rem 0 2rem;
 }
@@ -146,8 +129,6 @@ img {
 }
 
 /* Buttons */
-
-/* CSS */
 .button {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 999px;
@@ -156,7 +137,7 @@ img {
   color: #FFFFFF;
   cursor: pointer;
   flex-shrink: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
   font-size: 16px;
   font-weight: 500;
   height: 3rem;
@@ -174,12 +155,6 @@ img {
   transition-duration: .1s;
 }
 
-@media (min-width: 768px) {
-  .button-36 {
-    padding: 0 2.6rem;
-  }
-}
-
 .button__icon {
   margin-left: var(--mb-0-5);
 }
@@ -190,7 +165,6 @@ img {
 }
 
 /* ScrollBar */
-
 ::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -208,8 +182,7 @@ img {
   background: #232caa;
 }
 
-/* HEADER */
-
+/* Header */
 .header {
     width: 100%;
     position: fixed;
@@ -243,7 +216,7 @@ img {
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--title-color-dark-2);
+    color: var(--title-color-dark);
     font-weight: var(--font-medium);
     transition: .3s;
 }
@@ -257,7 +230,7 @@ img {
 /* Active Link */
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    color: var(--title-color);
 }
 
 /* Change Background Header */
@@ -265,8 +238,7 @@ img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-
-/* ABOUT IT */
+/* Welcome */
 .home__container {
     row-gap: 7rem;
 }
@@ -286,11 +258,11 @@ img {
 
 .home__social-icon {
     font-size: 1.25rem;
-    color: var(--title-color-dark-2);
+    color: var(--title-color-dark);
 }
 
 .home__social-icon:hover {
-    color: var(--title-color-dark);
+    color: var(--title-color);
 }
 
 .home__title {
@@ -321,7 +293,7 @@ img {
     position: absolute;
     width: 70px;
     height: 1px;
-    background-color: var(--text-color);
+    background-color: var(--title-color-dark);
     left: 0;
     top: 1rem;
 }
@@ -424,8 +396,7 @@ img {
     }
 }
 
-/* ABOUT */
-
+/* About */
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -474,7 +445,7 @@ img {
     margin-bottom: var(--mb-2-5);
 }
 
-/* SKILLS */
+/* Skills */
 .skills__container {
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
@@ -525,4 +496,29 @@ img {
 
 .skills__level {
     font-size: var(--tiny-font-size);
+}
+
+/* Footer */
+.footer {
+  background-color: #121212;
+}
+
+.footer__container {
+  padding: 0.1rem 0 0.03rem;
+}
+
+.footer__title,
+.footer__link {
+  color: var(--title-color);
+}
+
+.footer__title {
+  display: block;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  color: var(--text-color);
+  text-align: center;
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: -0.5px;
 }

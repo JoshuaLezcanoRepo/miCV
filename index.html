@@ -3,16 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./src/assets/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/css/style.css">
+    <meta name="description" content="Bienvenido a mi Portfolio!">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Joshua David - Portfolio</title>
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- Header -->
     <header class="header">
         <nav class="nav container">
+            <!-- Logo -->
             <a href="index.html" class="nav__logo">JD</a>
+            <!-- Nav List -->
             <div class="nav__menu show-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
@@ -32,24 +39,6 @@
                             <i class='uil uil-file-alt nav__icon'></i> Skills
                         </a>
                     </li>
-
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class='uil uil-briefcase-alt nav__icon'></i> Servicios
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class='uil uil-scenery nav__icon'></i> Portfolio
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='uil uil-message nav__icon'></i> Contacto
-                        </a>
-                    </li>
                 </ul>
                 <i class="uil uil-times nav__close"></i>
             </div>
@@ -59,11 +48,13 @@
             </div>
         </nav>
     </header>
-    <main>
-        <!-- ACERCA DE -->
+    <!-- Main -->
+    <main class="main">
+        <!-- Bienvenida -->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
+                    <!-- Iconos Redes -->
                     <div class="home__social">
                         <a href="https://github.com/JoshuaLezcanoRepo" class="home__social-icon" target="#">
                             <i class="uil uil-github-alt"></i>
@@ -77,9 +68,9 @@
                             <i class="uil uil-dribbble"></i>
                         </a>
                     </div>
-
+                    <!-- Avatar -->
                     <div class="home__img"></div>
-
+                    <!-- Info -->
                     <div class="home__data">
                         <h1 class="home__title">Josh David
                             <svg width="36" height="36" viewBox="0 0 48 48" fill="none"
@@ -120,7 +111,7 @@
                         <p class="home__description">Tengo 20 años y vivo en Argentina, me encanta la programación web y
                             disfruto cada momento creando cosas increíbles.</p>
 
-                        <a href="#contact" class="button button--flex">
+                        <a href="mailto:joshualezcano8@gmail.com" class="button button--flex">
                             Contáctame
                             <svg class='button__icon' height="1em" viewBox="0 0 512 512" fill='var(--title-color)'>
                                 <path
@@ -130,11 +121,11 @@
                     </div>
                 </div>
 
-
+                <!-- Scroll Down Button -->
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <svg width="32px" height="32px" class="home__scroll-mouse" viewBox="0 0 247 390" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
                             style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
                             <path class="wheel" d="M123.359,79.775l0,72.843"
                                 style="fill: none; stroke: var(--title-color); stroke-width: 20px;"></path>
@@ -149,14 +140,15 @@
             </div>
         </section>
 
-        <!-- ACERCA DE -->
+        <!-- Acerca De -->
         <section class="about section" id="about">
             <h2 class="section__title">Acerca de Mi</h2>
             <span class="section__subtitle">Mi Introducción</span>
 
             <div class="about__container container grid">
-                <img src="./src/assets/images/profile.png" alt="" class="about__img"/>
+                <img src="./src/assets/images/profile.png" alt="Avatar" class="about__img">
                 <div class="about__data">
+                    <!-- Datos Varios -->
                     <div class="about__info grid">
                         <div class="about__box">
                             <i class='bx bx-award about__icon'></i>
@@ -169,7 +161,7 @@
                             <span class='about__subtitle'>+ 50 Proyectos</span>
                         </div>
                         <div class="about__box">
-                            <i class='bx bx-support about__icon'></i>
+                            <i class='bx bx-user about__icon'></i>
                             <h3 class="about__title">Clientes</h3>
                             <span class='about__subtitle'>+ 30 Satisfechos</span>
                         </div>
@@ -179,7 +171,8 @@
                         de Usuario UI/UX intuitiva y cautivadora para que tu presencia en línea destaque y atraiga a tus
                         clientes.
                     </p>
-                    <a href="#" class="button button--flex">Descargar CV
+                    <!-- CV -->
+                    <a href="./src/assets/JDCV.pdf" class="button button--flex">Descargar CV
                         <svg class='button__icon' xmlns="http://www.w3.org/2000/svg" height="1em"
                             fill='var(--title-color)' viewBox="0 0 512 512">
                             <path
@@ -190,11 +183,11 @@
             </div>
         </section>
 
-        <!-- SKILLS -->
+        <!-- Skills -->
         <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">Mis Conocimientos</span>
-
+            <!-- Skills FrontEnd -->
             <div class="skills__container container grid">
                 <div class="skills__content">
                     <h3 class="skills__title">FrontEnd</h3>
@@ -252,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Skills BackEnd -->
                 <div class="skills__content">
                     <h3 class="skills__title">Backend</h3>
 
@@ -313,5 +306,12 @@
             </div>
         </section>
     </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <span class="footer__title">© JD. Todos los Derechos Reservados - 2023</span>
+        </div>
+    </footer>
 </body>
+
 </html>
